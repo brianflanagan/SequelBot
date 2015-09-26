@@ -19,7 +19,7 @@ loop do
 
   puts " >> " + msg
 
-  TODO response = $twitter.update(msg)
+  response = $twitter.update(msg)
   puts " >> >> posted: http://twitter.com/#{ response.user.screen_name }/status/#{ response.id.to_s }"
 
   sleep 30 * 60 # every 30 mins
