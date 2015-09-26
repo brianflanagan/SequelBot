@@ -1,0 +1,1 @@
+sequels: bundle exec ruby sequel_bot.rb
