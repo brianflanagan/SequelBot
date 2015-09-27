@@ -1,5 +1,6 @@
-# EurogroupIdeas
-A simple twitterbot capable of complex neo-liberal economics.
+# SequelBot
+
+This bot escaped from the R&D lab of a film studio and now pitches movie ideas on Twitter!
 
 Written in Ruby. Will run on Heroku. Requires a little config to work with _your_ twitter account:
 
@@ -12,10 +13,10 @@ ACCESS_TOKEN_SECRET=YOUR_TWITTER_ACCESS_TOKEN_SECRET
 
 Here's what it does:
 
-Every 15 minutes, it:
+Every 30 minutes, it:
 
-- chooses a European debtor nation (Portugal, Ireland, Italy, Greece, Spain)
-- finds a tweet that mentions something that nation has (`Irish stout`, `Italian Senate`)
-- recommends that the debtor nation privatize that particular noun
+- picks a random film title from IMDB, particularly the top charts (all time, in theatres, by genre)
+- Attempts two split it into its two main components
+- Appends '2' to each component
 
-So stupidly simple it almost seems like these policies wouldn't work...
+Coming to a theatre near you!
