@@ -5,14 +5,14 @@ IMDB_GENRES = 'action','adventure','animation','biography','comedy','crime','doc
 
 class Imdb
   def self.random_film_title
-    case [:genre, :genre, :genre, :genre, :genre, :top, :top, :recent].sample
-    when :top
+    case (1..100).to_a.sample
+    when 1..81
       doc = Nokogiri::HTML(open(top_charts_page))
       return doc.css('table.chart tbody td.titleColumn > a').to_a.map(&:text).sample
-    when :genre
+    when 82..99
       doc = Nokogiri::HTML(open(random_genre_page))
       return doc.css('table.results:first tr.detailed td.title > a').to_a.map(&:text).sample
-    when :recent
+    when 100
       doc = Nokogiri::HTML(open(recent_charts_page))
       return doc.css('#boxoffice table.chart tbody td.titleColumn > a').to_a.map(&:text).sample
     end
