@@ -25,7 +25,7 @@ GEM
     guard-foreman (0.0.4)
       guard (~> 2.6)
       spoon (~> 0.0, >= 0.0.4)
-    http (0.9.7)
+    http (0.9.8)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
@@ -58,6 +58,7 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rwordnet (1.0.0)
     shellany (0.0.1)
     simple_oauth (0.3.1)
     slop (3.6.0)
@@ -88,6 +89,7 @@ DEPENDENCIES
   guard
   guard-foreman
   nokogiri
+  rwordnet
   twitter
 
 BUNDLED WITH
