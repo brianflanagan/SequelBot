@@ -184,6 +184,6 @@ class SequelGenerator
       last_word = last_word.scan(/(.+)[aeiou]\z/i).first.first
     end
 
-    return "#{ title }: The #{ last_word }ening"
+    return "#{ title } 2: The #{ last_word }ening"
   end
 end
